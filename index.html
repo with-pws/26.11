@@ -10,7 +10,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="박원순혁신재단">
 <meta property="og:title" content="도요새편지 &lt;04&gt; · 2026년 11월 30일">
-<meta property="og:description" content="2026 회원의날 &lt;이야기 포트럭 파티&gt;를 잘 마쳤습니다.">
+<meta property="og:description" content="2026 회원의날 소식과 사회혁신가 지원사업 선정자, &lt;원순씨의 열린 서재&gt; 독후감을 전합니다.">
 <meta property="og:url" content="https://with-pws.github.io/26.11/">
 <meta property="og:image" content="https://with-pws.github.io/26.11/group2.jpg">
 <meta property="og:image:alt" content="도요새편지 2026년 11월호 표지">
@@ -714,9 +714,10 @@
   .program__time{min-width:7.3em;text-align:left;font-variant-numeric:tabular-nums}
 
   /* 작은마켓 물품 사진 3장 */
-  .market-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:-14px 0 30px}
-  .market-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
-  @media (max-width:760px){ .market-grid{gap:6px;margin-top:-18px} }
+  .market-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0 10px}
+  .market-grid img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+  .market-grid__wide{grid-column:1 / -1}
+  @media (max-width:760px){ .market-grid{grid-template-columns:1fr;gap:10px} }
 </style>
 </head>
 <body>
@@ -750,7 +751,9 @@
       <p>날이 많이 추워졌습니다. 건강 유의하시길 바라며, 11월 소식 전합니다.</p>
 
       <ol class="lead-list lead-list--tight" style="margin-top:30px">
-        <li><strong>2026 회원의날</strong>을 잘 마쳤습니다.</li>
+        <li><strong>2026 회원의날</strong>을 돌아봅니다.</li>
+        <li><strong>사회혁신가 지원사업</strong> 선정자를 소개합니다.</li>
+        <li>책읽기 모임 <strong>&lt;원순씨의 열린 서재&gt;</strong> 독후감을 소개합니다.</li>
       </ol>
     </section>
 
@@ -789,61 +792,62 @@
       </dl>
     </section>
 
-    <div class="page__foot">
-      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
-      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
-    </div>
-  </div>
-</article>
-
-<!-- ============ 페이지 03 : 작은마켓 ============ -->
-<article class="page">
-  <div class="page__top page__top--bare"></div>
-
-  <div class="page__body">
-    <h2 class="h-lead"><span class="mark mark--nostar">&lt;작은마켓&gt;</span></h2>
-
-    <figure class="photo rise">
-      <img src="market.jpg" alt="회원의날 작은마켓에서 참석자들이 기부 물품을 둘러보는 모습">
-    </figure>
-
-    <div class="market-grid rise">
-      <img src="market1.jpg" alt="작은마켓의 발효빵과 스카프 판매대">
-      <img src="market2.jpg" alt="작은마켓에 놓인 장갑, 텀블러, 새활용 복슬비 등 기부 물품">
-      <img src="market3.jpg" alt="작은마켓에 놓인 전통주, 키링, 지갑 등 기부 물품">
-    </div>
-
-    <section class="news">
+    <!-- 작은마켓 -->
+    <section class="news" style="margin-top:40px">
+      <h3 class="h-sub">&lt;작은마켓&gt;</h3>
+      <figure class="photo rise">
+        <img src="market.jpg" alt="회원의날 작은마켓에서 참석자들이 기부 물품을 둘러보는 모습">
+      </figure>
       <div class="prose">
         <p>회원님들이 기부해 주신 물품으로 작은마켓을 열었습니다.</p>
+      </div>
+      <div class="market-grid rise">
+        <img class="market-grid__wide" src="market1.jpg" alt="작은마켓의 발효빵과 스카프 판매대">
+        <img src="market2.jpg" alt="작은마켓에 놓인 장갑, 텀블러, 새활용 복슬비 등 기부 물품">
+        <img src="market3.jpg" alt="작은마켓에 놓인 전통주, 키링, 지갑 등 기부 물품">
       </div>
     </section>
 
     <div class="page__foot">
       <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
       <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+    </div>
+  </div>
+</article>
+
+<!-- ============ 페이지 03 : 사회혁신가 지원사업 선정자 소개 ============ -->
+<article class="page">
+  <div class="page__top page__top--bare"></div>
+
+  <div class="page__body">
+    <h2 class="h-lead"><span class="mark mark--nostar">사회혁신가 지원사업</span><br class="br-mo"> 선정자 소개</h2>
+
+    <div class="ph ph--text" style="padding:60px 20px;text-align:center">선정자 소개 내용 자리</div>
+
+    <div class="page__foot">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
       <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
     </div>
   </div>
 </article>
 
-<!-- ============ 페이지 04 : 특별 감사 + 마감 ============ -->
+<!-- ============ 페이지 04 : 열린 서재 독후감 + 마감 ============ -->
 <article class="page">
   <div class="page__top page__top--bare"></div>
 
   <div class="page__body">
-    <h2 class="h-lead"><span class="mark mark--nostar">특별 감사</span></h2>
+    <h2 class="h-lead">책읽기 모임<br class="br-mo"> <span class="mark mark--nostar">&lt;원순씨의 열린 서재&gt;</span></h2>
 
     <section class="news">
-      <div class="split rise" style="grid-template-columns:1fr 1.1fr;align-items:start">
-        <figure class="photo" style="margin:0">
-          <img src="thanks.jpg" alt="양주농부 이범석 대표가 감사장을 받고 기념 촬영하는 모습" style="aspect-ratio:auto">
-        </figure>
-        <div class="prose" style="margin-top:-.3em">
-          <p><strong>양주농부 이범석 대표님</strong></p>
-          <p>회원의날에 쌈채소꾸러미를 후원해 주신 이범석 대표님께 감사장을 전했습니다.</p>
-          <p><strong>도움 주신 모든 분께 깊이 감사드립니다.</strong></p>
-        </div>
+      <span class="eyebrow">독후감</span>
+      <h3 class="h-sub" style="margin-top:6px">『야만시대의 기록 — 고문의 한국현대사』</h3>
+      <p class="pnote" style="margin:-6px 0 18px;font-family:var(--sans)">10월 26일 모임 · 작성 원유미</p>
+      <div class="prose">
+        <p>고문은 한 사람의 인생을 파괴한다. 육체적인 상흔뿐 아니라 정신적인 트라우마도 평생을 간다. 서울대 상대를 졸업하고 똑똑하고 촉망받는 시인이었던 천상병 시인은 동백림사건으로 중앙정보부에서 엄청난 고문을 받고, 고문 후유증으로 진짜 ‘어린아이’가 되어버렸다고 한다. 나도 직장이 서울구치소 근방이었으나 학내시위 주동으로 투옥됐던 서울구치소를 35년 동안 쳐다보지 못했다.</p>
+      </div>
+      <div class="btnrow">
+        <a class="linkbtn linkbtn--slim" href="bookreview-01.pdf" target="_blank" rel="noopener">독후감 전문 읽기 (PDF) <i>&rarr;</i></a>
       </div>
     </section>
 
@@ -859,7 +863,7 @@
       </div>
     </section>
 
-        <div class="page__foot">
+            <div class="page__foot">
       <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
       <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
       <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
