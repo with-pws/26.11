@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<title>도요새편지 2026년 11월 30일 · (사)박원순혁신재단</title>
+
+<!-- 문자·카카오톡 등에서 링크를 공유할 때 보이는 미리보기 -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="박원순혁신재단">
+<meta property="og:title" content="도요새편지 &lt;04&gt; · 2026년 11월 30일">
+<meta property="og:description" content="사회혁신가 지원사업 경과와 회원의날 &lt;이야기 포트럭 파티&gt; 소식을 전합니다.">
+<meta property="og:url" content="https://with-pws.github.io/26.11/">
+<meta property="og:image" content="https://with-pws.github.io/26.11/webposter.jpg">
+<meta property="og:image:alt" content="도요새편지 2026년 11월호 표지">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600&family=Nanum+Myeongjo:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1b1a17;
+    --ink-soft:#54524c;
+    --ink-faint:#8b887f;
+    --yellow:#f9c22b;
+    --gold:#dda600;
+    --wash:#fdf5dd;
+    --paper:#ffffff;
+    --desk:#eceae4;
+    --rule:#e4e1d8;
+    --serif:'Gowun Batang', serif;
+    --sans:'IBM Plex Sans KR', sans-serif;
+    --display:'Nanum Myeongjo', serif;
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--desk);
+    color:var(--ink);
+    font-family:var(--serif);
+    line-height:1.9;
+    padding:32px 16px 72px;
+    word-break:keep-all;
+    overflow-wrap:break-word;
+  }
+  img,video{max-width:100%}
+
+  /* ---------- 페이지(종이) ---------- */
+  .page{
+    max-width:860px;
+    margin:0 auto 34px;
+    background:var(--paper);
+    padding:44px 52px 48px;
+    box-shadow:0 1px 2px rgba(0,0,0,.06), 0 14px 34px rgba(0,0,0,.09);
+    display:flex;
+    flex-direction:column;
+    min-height:auto;
+  }
+  .page__top{
+    position:relative;
+    display:flex;align-items:center;justify-content:center;gap:6px;
+    padding-bottom:12px;
+    border-bottom:3px solid var(--yellow);
+    margin-bottom:32px;   /* 노란 바와 본문 사이 여백 */
+  }
+  .page__body{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+  }
+  /* 면 하단 로고 */
+  .page__foot{
+    margin-top:auto;              /* 남는 공간을 위로 밀어 로고를 바닥에 붙인다 */
+    padding-top:34px;
+    display:flex;align-items:center;justify-content:center;gap:6px;
+  }
+  .page__foot-logo{
+    height:22px;
+    width:auto;
+    display:inline-block;
+  }
+  /* 발행일 없이 노란 바만 두는 면(2·3면) — 1면과 같은 높이를 유지 */
+  .page__top--bare{min-height:38px}
+
+  /* 가운데: 레터 고유번호 */
+  .page__no{
+    font-family:var(--sans);font-weight:500;
+    font-size:.82rem;letter-spacing:.16em;
+    color:var(--ink-soft);
+  }
+  /* 오른쪽: 발행일 */
+  .page__issue{
+    position:absolute;right:0;bottom:12px;
+    font-family:var(--sans);font-weight:500;
+    font-size:.68rem;letter-spacing:.1em;
+    color:var(--ink-faint);
+  }
+
+  /* ---------- 표지 제호 (레이아웃 복구 & 상하 중앙 배치) ---------- */
+  .masthead{
+    display:flex;
+    align-items:center;   /* 로고가 제목보다 커도 제목이 아래로 밀리지 않게 */
+    justify-content:space-between;
+    gap:24px;
+    /* 위 여백은 .page__top이 담당하므로 아래쪽만 지정 */
+    margin:0 0 32px; 
+  }
+  .masthead__title{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:4px;
+    margin:0;
+  }
+  .masthead__org{
+    font-family:var(--display);font-weight:800;
+    font-size:clamp(1.2rem,3.3vw,1.78rem);
+    line-height:1.2;letter-spacing:.01em;
+    color:var(--ink);
+  }
+  .masthead__name{
+    font-family:var(--display);font-weight:800;
+    font-size:clamp(2.6rem,7.4vw,4.25rem);
+    line-height:1.04;letter-spacing:-.03em;
+    color:var(--gold);
+  }
+  .masthead__bridge{
+    flex:1;
+    align-self:flex-end;
+    border-bottom:1px solid var(--rule);
+    margin-bottom:14px; /* 바닥선 위치 조정 */
+    min-width:24px;
+  }
+  .masthead__meta{
+    border-left:1px solid var(--rule);
+    padding-left:26px;
+    padding-bottom:6px;
+    flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .masthead__logo{
+    height:129px; 
+    width:auto;
+    display:block;
+  }
+
+  /* ---------- 표지 영상 ---------- */
+  .cover{
+    position:relative;margin:0 0 34px;background:#000;
+    aspect-ratio:1104/832;overflow:hidden;
+    border:1px solid var(--rule);   /* PC·모바일 공통 표지 테두리 */
+  }
+  .cover video{display:block;width:100%;height:100%;object-fit:cover}
+  .cover__play{
+    position:absolute;inset:0;display:none;
+    align-items:center;justify-content:center;
+    background:rgba(20,18,14,.28);border:0;cursor:pointer;width:100%;
+  }
+  .cover__play span{
+    font-family:var(--sans);font-size:.8rem;font-weight:500;
+    background:#fff;color:var(--ink);border-radius:999px;padding:10px 22px;
+  }
+  .cover.is-paused .cover__play{display:flex}
+  .cover__sound{
+    position:absolute;left:12px;top:12px;
+    font-family:var(--sans);font-size:.72rem;font-weight:500;
+    background:rgba(20,18,14,.55);color:#fff;border:0;border-radius:999px;
+    padding:7px 14px;cursor:pointer;backdrop-filter:blur(2px);
+  }
+  .cover__sound:hover{background:rgba(20,18,14,.75)}
+
+  /* ---------- 공통 타이포 ---------- */
+  .eyebrow{
+    font-family:var(--sans);
+    font-size:.7rem;font-weight:600;letter-spacing:.26em;
+    color:var(--gold);
+    display:block;margin-bottom:12px;
+  }
+  .h-lead{
+    font-family:var(--serif);font-weight:700;
+    font-size:clamp(1.72rem,4.3vw,2.42rem);
+    line-height:1.45;margin:0 0 26px;letter-spacing:-.01em;
+  }
+
+  .h-lead--lg{
+    font-size:clamp(1.95rem,5.1vw,2.85rem);
+    line-height:1.35;
+  }
+  .h-sub{
+    font-family:var(--serif);font-weight:700;
+    font-size:1.62rem;margin:0 0 14px;line-height:1.5;
+  }
+  .prose p{margin:0 0 1.05em;font-size:1rem;color:var(--ink)}
+  .lead-list{list-style:none;margin:6px 0 0;padding:0;counter-reset:lead}
+  .lead-list li{
+    counter-increment:lead;position:relative;
+    padding-left:30px;margin-bottom:9px;font-size:1rem;line-height:1.8;
+  }
+  .lead-list li::before{
+    content:counter(lead) ".";position:absolute;left:0;top:0;
+    font-family:var(--sans);font-weight:600;font-size:.95rem;color:var(--gold);
+  }
+  .prose p:last-child{margin-bottom:0}
+  /* 본문 속 작은 덧말 */
+  .pnote{font-size:.86em;color:var(--ink-soft)}
+  .aside{font-size:.86rem;line-height:1.95;color:var(--ink-soft)}
+  .aside p{margin:0 0 1em}
+  .aside p:last-child{margin-bottom:0}
+  /* 본문과 같은 크기·색으로 읽히는 곁글 */
+  .aside--strong{font-size:1.06rem;color:var(--ink)}
+
+  /* ---------- 목차 ---------- */
+  .toc{border-top:1px solid var(--rule);margin-top:34px;padding-top:24px}
+  .toc__label{
+    font-family:var(--sans);font-size:.7rem;font-weight:600;
+    letter-spacing:.24em;color:var(--ink-faint);margin-bottom:14px;
+  }
+  .toc__item{
+    display:grid;grid-template-columns:44px 1fr;
+    align-items:baseline;gap:8px;
+    padding:11px 0;border-bottom:1px solid var(--rule);
+  }
+  .toc__item:last-child{border-bottom:0;padding-bottom:0}
+  .toc__num{font-family:var(--sans);font-weight:600;font-size:.95rem;color:var(--yellow)}
+  .toc__txt{font-size:1rem}
+
+  /* ---------- 사진 ---------- */
+  .photo{margin:0 0 30px}
+  .photo img{
+    display:block;
+    width:100%;
+    aspect-ratio:3/2; /* 사진의 가로세로 3:2 비율 유지 (모바일 대응) */
+    object-fit:cover; /* 검은 여백을 제거하고 사진으로 꽉 채움 */
+    object-position:center;
+  }
+  .photo--43 img{aspect-ratio:4/3}   /* 작은마켓 사진: 아래쪽을 더 보이게 */
+  .photo--free img{aspect-ratio:auto}  /* 원본 비율 그대로 (자르지 않음) */
+  .photo figcaption{
+    font-family:var(--sans);font-size:.72rem;color:var(--ink-faint);
+    margin-top:8px;line-height:1.7;
+  }
+
+  /* ---------- 2단 조합 ---------- */
+  .split{display:grid;grid-template-columns:1.25fr 1fr;gap:38px;align-items:start}
+  .split .aside{padding-top:4px}
+
+  /* ---------- 정보 리스트 ---------- */
+  .facts{margin:0;border-top:2px solid var(--ink);padding-top:4px}
+  .facts__row{
+    display:grid;grid-template-columns:74px 1fr;gap:12px;
+    padding:11px 0;border-bottom:1px solid var(--rule);
+  }
+  .facts__k{
+    font-family:var(--sans);font-size:.76rem;font-weight:600;
+    letter-spacing:.08em;color:var(--ink-soft);padding-top:.28em;
+  }
+  .facts__v{font-size:.98rem;line-height:1.75}
+  .facts__v small{display:block;font-size:.84rem;color:var(--ink-soft);margin-top:2px}
+  /* 항목 값과 같은 글꼴·크기의 보조 안내 줄 */
+  .facts__note{display:block;margin-top:6px}
+  /* 신청·문의 이메일: 누르면 메일 앱으로 */
+  .facts__mail{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+  .facts__mail:hover{border-bottom-color:var(--ink)}
+
+  /* ---------- 회원소식 블록 ---------- */
+  .news{padding:26px 0;border-top:1px solid var(--rule)}
+  .news:first-of-type{border-top:0;padding-top:0}
+  .news__grid{display:grid;grid-template-columns:1.05fr 1fr;gap:34px;align-items:start}
+  .callout{background:var(--wash);padding:22px 24px;border-left:4px solid var(--yellow)}
+  .callout--wide{margin-top:22px}
+  .callout p{font-size:.9rem;line-height:1.9;margin:0;color:var(--ink)}
+  .callout .benefit__title{margin-bottom:12px}
+  .callout .lead-list li{margin-bottom:14px}
+  .callout .lead-list li:last-child{margin-bottom:0}
+  .callout__list{list-style:none;margin:0;padding:0}
+  .callout__list li{
+    position:relative;padding-left:20px;
+    font-size:.95rem;line-height:1.9;color:var(--ink);
+  }
+  .callout__list li + li{margin-top:10px}
+  .callout__list li::before{
+    content:"";position:absolute;left:0;top:.62em;
+    width:7px;height:7px;border:2px solid var(--gold);border-radius:50%;
+  }
+  .callout__contact{
+    display:block;font-family:var(--sans);font-size:.84rem;
+    color:var(--ink-soft);margin-top:4px;letter-spacing:.01em;
+  }
+  .callout__contact a{
+    color:var(--ink-soft);text-decoration:none;
+    border-bottom:1px solid var(--gold);
+  }
+  .callout__contact a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+  /* 물품 후원 방법 아래 문의 번호 */
+  .callout__note{
+    margin:16px 0 0;padding-top:12px;border-top:1px solid rgba(221,166,0,.28);
+    font-family:var(--sans);font-size:.86rem;color:var(--ink-soft);
+  }
+  .callout__note a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+  .rules{list-style:none;margin:14px 0 0;padding:0}
+  .rules li{
+    font-size:.92rem;color:var(--ink-soft);line-height:1.8;
+    padding-left:16px;position:relative;margin-bottom:6px;
+  }
+  .rules li::before{
+    content:"";position:absolute;left:0;top:.72em;
+    width:6px;height:6px;background:var(--yellow);
+  }
+
+  /* 회원확대 캠페인 */
+  .period{
+    font-family:var(--sans);font-size:.82rem;font-weight:500;
+    letter-spacing:.02em;color:var(--ink-soft);
+    margin:-4px 0 14px;
+  }
+
+  /* 후원 버튼 */
+  .give{margin-top:30px}
+  .give__btn{
+    display:flex;align-items:center;justify-content:center;gap:12px;
+    background:var(--yellow);color:#3d2e00;text-decoration:none;
+    font-family:var(--sans);font-weight:600;font-size:1.02rem;letter-spacing:.02em;
+    padding:19px 24px;
+    border-bottom:3px solid var(--gold);
+    transition:background .18s ease, transform .18s ease;
+  }
+  .give__btn:hover{background:#fcd260;transform:translateY(-1px)}
+  .give__btn i{font-style:normal;transition:transform .18s ease}
+  .give__btn:hover i{transform:translateX(4px)}
+
+  /* 맺음 안내 */
+  .footer{
+    margin-top:30px;border-top:2px solid var(--ink);padding-top:20px;
+    text-align:center;font-family:var(--sans);
+    font-size:.84rem;line-height:2;color:var(--ink-soft);
+  }
+  .footer p{margin:0}
+  .footer__org{font-weight:600;color:var(--ink)}
+  .footer a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--yellow)}
+  .footer a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+  /* 계좌번호: 눌러서 복사 */
+  .copybtn{
+    font:inherit;color:inherit;background:none;border:0;padding:0;
+    border-bottom:1px solid var(--yellow);cursor:pointer;
+  }
+  .copybtn:hover{color:var(--ink);border-bottom-color:var(--ink)}
+  .copybtn.is-copied{border-bottom-color:var(--gold);color:var(--ink)}
+  .copybtn.is-copied::after{
+    content:"복사됨";margin-left:6px;
+    font-size:.72rem;color:var(--gold);border-bottom:0;
+  }
+
+  /* ---------- 등장 효과 ---------- */
+  .rise{opacity:1;transform:none}
+  .js-anim .rise{opacity:0;transform:translateY(14px);transition:opacity .6s ease, transform .6s ease}
+  .js-anim .rise.in{opacity:1;transform:none}
+
+  /* ---------- 강조 ---------- */
+  .hl{
+    background:linear-gradient(to top, rgba(249,194,43,.62) 42%, transparent 42%);
+    font-weight:700;padding:0 .08em;border-radius:2px;
+  }
+  /* 손으로 그린 듯한 동그라미 강조 */
+  .circle{
+    display:inline-block;
+    padding:.14em .38em .18em;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:100% 100%;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 92' preserveAspectRatio='none'><path d='M143 9 C 100 1, 46 6, 24 27 C 5 46, 24 74, 70 83 C 118 91, 172 79, 185 57 C 194 41, 180 23, 152 14' fill='none' stroke='%23dda600' stroke-width='4' stroke-linecap='round'/></svg>");
+  }
+
+  /* 손그림 별표 + 사선 밑줄 강조 */
+  .mark{
+    position:relative;display:inline-block;
+    background-repeat:no-repeat;
+    background-position:0 100%;
+    background-size:100% .32em;
+    padding-bottom:.18em;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 22' preserveAspectRatio='none'><path d='M3 18 C 60 15, 140 10, 197 4' fill='none' stroke='%23dda600' stroke-width='5' stroke-linecap='round'/><path d='M14 21 C 70 18, 150 13, 193 9' fill='none' stroke='%23dda600' stroke-width='3' stroke-linecap='round' opacity='.75'/></svg>");
+  }
+  .mark::after{
+    content:"";position:absolute;
+    left:.30em;top:-.56em;width:.34em;height:.34em;
+    background-repeat:no-repeat;background-size:contain;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-6 -8 112 112'><g transform='rotate(14 50 50)'><path d='M 47.0 -1.6 Q 53.0 0.9 49.7 6.4 Q 65.0 45.6 75.9 86.2 Q 39.6 66.3 9.1 38.5 Q 52.0 41.0 94.8 36.2 Q 57.1 59.0 21.9 85.7 Q 30.6 44.2 49.7 6.4 L 56.5 27.2' fill='none' stroke='%23dda600' stroke-width='10' stroke-linecap='round' stroke-linejoin='round'/></g></svg>");
+  }
+  .mark::before{
+    content:"";position:absolute;
+    left:-.32em;top:-.40em;width:.76em;height:.76em;
+    background-repeat:no-repeat;background-size:contain;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-6 -8 112 112'><g transform='rotate(-10 50 50)'><path d='M 46.0 -4.6 Q 52.3 -2.1 48.8 3.6 Q 67.1 42.5 76.1 84.7 Q 40.0 61.0 4.9 35.9 Q 49.0 38.6 92.9 33.4 Q 59.6 63.2 21.0 85.6 Q 31.8 43.5 48.8 3.6 L 55.9 24.6' fill='none' stroke='%23dda600' stroke-width='6.5' stroke-linecap='round' stroke-linejoin='round'/></g></svg>");
+  }
+
+  /* 손으로 그린 따옴표 + 밑줄 강조 */
+  .q{
+    display:inline-block;vertical-align:top;
+    width:.44em;height:.44em;
+    background-repeat:no-repeat;background-size:contain;background-position:center;
+  }
+  .q--o{margin-right:.02em;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><path d='M15 9 C 9 13, 6 20, 8 27' fill='none' stroke='%23dda600' stroke-width='4.5' stroke-linecap='round'/><path d='M31 8 C 25 13, 22 19, 24 27' fill='none' stroke='%23dda600' stroke-width='4.5' stroke-linecap='round'/></svg>");
+  }
+  /* 줄 첫머리에 올 때 글줄 왼쪽 맞춤 */
+  .q--flush{margin-left:-.46em}
+  .q--c{margin-left:.04em;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><g transform='rotate(180 20 20)'><path d='M15 9 C 9 13, 6 20, 8 27' fill='none' stroke='%23dda600' stroke-width='4.5' stroke-linecap='round'/><path d='M31 8 C 25 13, 22 19, 24 27' fill='none' stroke='%23dda600' stroke-width='4.5' stroke-linecap='round'/></g></svg>");
+  }
+
+  .uline{
+    text-decoration:underline;
+    text-decoration-color:var(--gold);
+    text-decoration-thickness:.07em;
+    text-underline-offset:.18em;
+    text-decoration-skip-ink:none;
+  }
+
+  /* 물결 밑줄 */
+  .wave{
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='8' viewBox='0 0 24 8'><path d='M0 5 Q 3 1, 6 5 T 12 5 T 18 5 T 24 5' fill='none' stroke='%23dda600' stroke-width='2' stroke-linecap='round'/></svg>");
+    background-repeat:repeat-x;
+    background-position:0 calc(100% - .13em);
+    background-size:.58em .2em;
+    padding-bottom:0;
+  }
+
+  /* 줄 첫머리에 올 때 글줄 왼쪽을 맞춘다 */
+  .circle--flush{margin-left:-.38em;margin-right:-.2em}
+
+  .ul{
+    text-decoration:underline;text-decoration-color:var(--gold);
+    text-decoration-thickness:2px;text-underline-offset:4px;
+    font-weight:600;color:var(--ink);
+  }
+  /* 일시: 날짜와 시간을 두 줄로 (PC·모바일 동일) */
+  .br-m{display:inline}
+  .facts__v small.meal{display:inline;margin-top:0;margin-left:.35em}
+  .facts__v small.meal::before{content:"("}
+  .facts__v small.meal::after{content:")"}
+
+  .linkbtn{
+    display:inline-flex;align-items:center;gap:6px;
+    font-family:var(--sans);font-weight:600;font-size:.82rem;
+    background:var(--yellow);color:#3d2e00;text-decoration:none;
+    padding:7px 13px;border-bottom:2px solid var(--gold);
+    transition:background .18s ease, transform .18s ease;
+  }
+  .linkbtn:hover{background:#fcd260;transform:translateY(-1px)}
+  .linkbtn:hover i{transform:translateX(3px)}
+  /* 큰 버튼 + 버튼 줄 */
+  .linkbtn--lg{font-size:1rem;padding:13px 22px;border-bottom-width:3px}
+  .btnrow{
+    display:flex;flex-wrap:wrap;gap:12px;
+    justify-content:center;margin-top:24px;
+  }
+  /* 공고문 이미지 (누르면 홈페이지로) */
+  .notice{
+    display:block;margin:26px auto 0;max-width:620px;
+    border:1px solid var(--rule);
+    transition:box-shadow .18s ease, transform .18s ease;
+  }
+  .notice img{display:block;width:100%;height:auto}
+  .notice:hover{box-shadow:0 8px 22px rgba(0,0,0,.14);transform:translateY(-2px)}
+
+  /* PC에서는 4면 캠페인 문단만 오른쪽 끝을 맞춘다(양쪽 정렬) */
+  @media (min-width:761px){
+
+    /* PC: 제목을 한 줄로 (모바일은 두 줄 유지) */
+    .br-mo{display:none}
+    .circle--flush{margin-left:0;margin-right:0}
+
+    /* PC: 곁글이 너무 작지 않도록 */
+    .aside{font-size:.95rem;line-height:1.9}
+    .aside--strong{font-size:1.1rem;line-height:1.9}
+    .split--even{grid-template-columns:1fr 1fr;gap:34px}
+
+    /* PC: 항목 표를 두 단으로 나눠 가로 공간을 채운다 */
+    .facts--2col{
+      display:grid;grid-template-columns:1fr 1fr;
+      column-gap:48px;position:relative;
+    }
+    /* 왼쪽 5개 항목, 오른쪽 나머지로 나눈다 */
+    .facts--split5{grid-auto-flow:column;grid-template-rows:repeat(5,auto)}
+
+    /* 두 단 사이 세로 구분선 */
+    .facts--2col::before{
+      content:"";position:absolute;top:0;bottom:0;left:50%;
+      width:1px;background:var(--rule);
+    }
+
+    /* PC: 물품 후원 방법 박스를 전체 폭으로, 항목은 두 단으로 */
+    .callout--wide{padding:24px 28px}
+    .callout--wide .lead-list{display:grid;grid-template-columns:1fr 1fr;gap:0 36px}
+    .callout--wide .lead-list li{margin-bottom:0}
+
+    /* PC에는 문자 앱이 없는 경우가 많으므로 문자 링크만 막는다 (이메일은 PC·모바일 모두 작동) */
+    .footer a[href^="sms:"],
+    .callout__contact a[href^="sms:"]{
+      pointer-events:none;cursor:default;
+      color:inherit;border-bottom:0;
+    }
+  }
+
+
+  /* ---------- 준비 중 자리표시 ---------- */
+  .ph{
+    font-family:var(--sans);font-size:.84rem;color:var(--ink-faint);
+    background:repeating-linear-gradient(45deg,#faf9f6,#faf9f6 10px,#f4f2ec 10px,#f4f2ec 20px);
+    border:1px dashed var(--rule);
+  }
+  .ph--cover{
+    display:flex;align-items:center;justify-content:center;
+    aspect-ratio:4/3;margin:0 0 34px;letter-spacing:.04em;
+  }
+  .ph--photo{
+    display:flex;align-items:center;justify-content:center;
+    aspect-ratio:3/2;margin:0 0 30px;letter-spacing:.04em;
+  }
+  .ph--text{padding:14px 16px}
+  .ph--inline{
+    display:inline-block;padding:2px 10px;font-size:.86rem;
+    background:none;border:1px dashed var(--rule);
+  }
+
+  /* ---------- 후원자 혜택 2단 ---------- */
+  .benefit{
+    display:grid;grid-template-columns:1fr 1fr;gap:22px;
+    margin-top:30px;
+  }
+  .benefit__box{
+    background:var(--wash);padding:22px 24px;border-left:4px solid var(--yellow);
+  }
+  .benefit__title{
+    font-family:var(--serif);font-weight:700;font-size:1.12rem;
+    margin:0 0 8px;line-height:1.5;
+  }
+  .benefit__box p{margin:0;font-size:.92rem;line-height:1.85;color:var(--ink)}
+  .benefit__box .rules{margin-top:10px}
+  .benefit__box .benefit__note{
+    font-family:var(--sans);font-size:.68rem;font-weight:300;
+    line-height:1.7;letter-spacing:-.01em;
+    color:#a6a399;margin:12px 0 0;
+  }
+  .benefit__box .rules li{color:var(--ink-soft)}
+
+  /* ---------- 출처 링크 줄 ---------- */
+  .srcline{
+    font-family:var(--sans);font-size:.8rem;color:var(--ink-faint);
+    margin:18px 0 0;
+  }
+  .srcline a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--yellow)}
+  .srcline a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+
+  /* ---------- 반응형 ---------- */
+  @media (max-width:760px){
+    body{padding:0 0 28px;line-height:1.82}
+    .page{padding:24px 18px 30px;margin-bottom:12px;box-shadow:0 1px 0 rgba(0,0,0,.06);}
+    .split,.news__grid{grid-template-columns:1fr;gap:22px}
+    .split .aside{padding-top:0}
+    
+    .masthead{flex-direction:row;align-items:center;justify-content:space-between;gap:10px;margin:2px 0 24px;}
+    .masthead__title{gap:6px;flex:0 1 auto;min-width:0}
+    .masthead__org{font-size:clamp(.72rem, 3.2vw, .95rem);margin-left:0;white-space:nowrap;}
+    .masthead__name{font-size:clamp(1.85rem, min(13.2vw, calc((100vw - 142px) / 4.85)), 3.5rem);white-space:nowrap;}
+    .masthead__bridge{display:none}
+    .masthead__meta{border-left:1px solid var(--rule);padding-left:14px;flex:0 0 auto;padding-bottom:2px;}
+    .masthead__logo{height:81px;}
+
+    .benefit{grid-template-columns:1fr;gap:16px;margin-top:24px}
+    .benefit__box{padding:18px 18px}
+    .benefit__title{font-size:1.05rem}
+    .benefit__box p{font-size:.88rem}
+    .benefit__box .benefit__note{font-size:.64rem}
+    .srcline{font-size:.76rem}
+    .ph{font-size:.78rem}
+
+    .page__top{margin-bottom:24px;}
+    .page__top--bare{min-height:34px}
+    .page__no{font-size:.72rem;letter-spacing:.12em;}
+    .page__issue{font-size:.6rem;letter-spacing:.08em;bottom:12px}
+    .lead-list li{font-size:.98rem;padding-left:26px}
+    .callout__list li{font-size:.93rem}
+    .callout__contact{font-size:.8rem}
+    .eyebrow{font-size:.66rem;letter-spacing:.2em;margin-bottom:10px}
+
+    /* 마감 연락처 */
+    .footer{margin-top:22px;padding-top:16px;font-size:.78rem;line-height:1.95}
+
+    .page__foot{padding-top:26px}
+    .page__foot-logo{height:18px;}
+    .h-lead{font-size:clamp(1.62rem,7.4vw,2rem);line-height:1.4;margin-bottom:22px}
+    .h-lead--lg{font-size:clamp(1.82rem,8.4vw,2.35rem);}
+  }
+
+  /* ---------- 진행 단계 (사회혁신가 경과) ---------- */
+  .steps{
+    list-style:none;margin:28px 0 0;padding:0;
+    display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+    border-top:2px solid var(--ink);
+  }
+  .steps__item{
+    position:relative;padding:16px 16px 18px;
+    border-bottom:1px solid var(--rule);
+    display:flex;flex-direction:column;gap:2px;
+  }
+  .steps__item + .steps__item{border-left:1px solid var(--rule)}
+  .steps__k{font-family:var(--serif);font-weight:700;font-size:1.05rem;line-height:1.5}
+  .steps__v{font-family:var(--sans);font-size:.84rem;color:var(--ink-soft)}
+  .steps__s{
+    align-self:flex-start;margin-top:8px;
+    font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.06em;
+    padding:2px 10px;border:1px solid var(--rule);color:var(--ink-faint);border-radius:999px;
+  }
+  .steps__item.is-done .steps__s{border-color:var(--ink-faint);color:var(--ink-soft)}
+  .steps__item.is-now{background:var(--wash)}
+  .steps__item.is-now .steps__s{background:var(--yellow);border-color:var(--yellow);color:#3d2e00}
+
+  /* ---------- 진행 순서 (리플릿 식순 디자인 참고) ---------- */
+  .program{
+    margin-top:34px;padding:26px 0 24px;
+    border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);
+  }
+  .program__eyebrow{
+    display:block;text-align:center;
+    font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.32em;
+    color:var(--gold);
+  }
+  .program__title{
+    text-align:center;margin:4px 0 24px;
+    font-family:var(--serif);font-weight:700;font-size:1.42rem;line-height:1.5;
+  }
+  .program__part + .program__part{margin-top:26px}
+  .program__bar{
+    display:grid;grid-template-columns:52px 1fr auto;align-items:baseline;gap:10px;
+    background:var(--wash);padding:5px 12px;
+  }
+  .program__no{font-family:var(--sans);font-weight:500;font-size:.92rem;color:var(--ink-soft)}
+  .program__name{font-family:var(--serif);font-weight:700;font-size:1.08rem}
+  .program__time{font-family:var(--sans);font-size:.92rem;color:var(--ink-soft);white-space:nowrap}
+  .program__list{list-style:none;margin:12px 0 0;padding:0 0 0 74px}
+  .program__list li{font-size:1rem;line-height:1.7;margin-bottom:10px}
+  .program__list li:last-child{margin-bottom:0}
+  .program__list small{
+    display:block;padding-left:4.2em;margin-top:1px;
+    font-family:var(--sans);font-size:.8rem;color:var(--ink-faint);line-height:1.6;
+  }
+
+  @media (max-width:760px){
+    .steps{grid-template-columns:1fr}
+    .steps__item{flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:10px;padding:13px 4px}
+    .steps__item + .steps__item{border-left:0}
+    .steps__item.is-now{padding-left:12px;padding-right:12px}
+    .steps__s{margin:0 0 0 auto}
+    .steps__k{font-size:1rem;width:100%}
+
+    .program{padding:22px 0 20px}
+    .program__title{font-size:1.25rem;margin-bottom:20px}
+    .program__bar{grid-template-columns:40px 1fr auto;padding:5px 10px;gap:8px}
+    .program__no{font-size:.84rem}
+    .program__name{font-size:.98rem}
+    .program__time{font-size:.8rem}
+    .program__list{padding-left:20px}
+    .program__list li{font-size:.95rem}
+    .program__list small{padding-left:1.4em;font-size:.76rem}
+  }
+
+
+  /* 별표를 오른쪽 끝(> 위)으로 */
+  .mark--right::before{left:auto;right:-.42em}
+  .mark--right::after{left:auto;right:.36em}
+
+  /* 얇은 신청 버튼 */
+  .linkbtn--slim{font-size:.95rem;padding:9px 22px;border-bottom-width:2px}
+  @media (max-width:760px){ .linkbtn--slim{font-size:.9rem;padding:8px 18px} }
+
+  /* 표지 사진 (영상 대신) */
+  .cover--photo{background:none}
+  .cover--photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+
+  .cover__tmp{height:0;margin:0;position:relative;top:-27px;line-height:1;text-align:right;font-family:var(--sans);font-size:.75rem;color:var(--ink-faint)}
+  @media (max-width:760px){ .cover__tmp{top:-27px} }
+
+  /* 별표 없는 사선 밑줄 */
+  .mark--nostar::before,.mark--nostar::after{display:none}
+
+
+  /* 1면 목차 항목 간격 좁게 */
+  .lead-list--tight li{margin-bottom:2px}
+
+
+  /* 3호: 본문 글자 살짝 키움 */
+  .prose p{font-size:1.06rem}
+  .lead-list li{font-size:1.06rem}
+  .program__list li{font-size:1.04rem}
+  @media (max-width:760px){
+    .prose p{font-size:1.04rem}
+    .lead-list li{font-size:1.03rem}
+    .program__list li{font-size:.99rem}
+  }
+
+  /* 본문 줄 간격 살짝 줄임 */
+  .prose p{line-height:1.75;margin-bottom:.8em}
+  .aside, .aside--strong{line-height:1.75}
+  @media (max-width:760px){ .prose p{line-height:1.7} }
+
+  /* 1면 여는 글 문단 간격 줄임 */
+  .cover-prose p{margin-bottom:.45em}
+
+  /* 진행 순서 시간: 시작 시각 세로 정렬 */
+  .program__time{min-width:7.3em;text-align:left;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+
+<!-- ============ 페이지 01 : 표지 ============ -->
+<article class="page">
+  <div class="page__top">
+    <span class="page__no">&lt;도요새편지 04&gt;</span>
+    <span class="page__issue">2026년 11월 30일(월)</span>
+  </div>
+
+  <div class="page__body">
+    <div class="masthead">
+      <h1 class="masthead__title">
+        <span class="masthead__org">박원순혁신재단 소식지</span>
+        <span class="masthead__name">도요새편지</span>
+      </h1>
+      <span class="masthead__bridge" aria-hidden="true"></span>
+      <div class="masthead__meta">
+        <img src="logo.jpg" alt="도요새 로고" class="masthead__logo">
+      </div>
+    </div>
+
+    <!-- 표지 영상·사진 자리 (준비되면 2호처럼 .cover + video로 교체) -->
+    
+
+    <section class="prose rise cover-prose">
+      <span class="eyebrow">여는 글</span>
+      <p>회원님, 깊어가는 가을 평안하신지요.</p>
+
+      <p>갑자기 추워진 날씨에 감기 유의하시길 바라며, 10월 소식 전합니다!</p>
+
+      <ol class="lead-list lead-list--tight" style="margin-top:30px">
+        <li><strong>11/14(토) 회원의날</strong>에 초대합니다.</li>
+        <li><strong>사회혁신가 지원사업</strong> 공모를 마감했습니다.</li>
+        <li><strong>전주·전북 지역 모임</strong>이 있었습니다.</li>
+        <li>책읽기 모임 <strong>&lt;원순씨의 열린 서재&gt;</strong> 소식입니다.</li>
+      </ol>
+    </section>
+
+    <div class="page__foot">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+    </div>
+  </div>
+</article>
+
+<!-- ============ 페이지 02 : 회원의날 안내 ============ -->
+<article class="page">
+  <div class="page__top page__top--bare"></div>
+
+  <div class="page__body">
+    <h2 class="h-lead"><span class="mark mark--right">2026 회원의날</span>에<br class="br-mo"> 꼭 참석해주세요!</h2>
+
+    <section class="news">
+      <div class="prose">
+        <p>새로운 출발을 함께해 주신 회원 여러분과 2026년을 갈무리하며, 한 해의 이야기와 희망을 나누는 자리를 마련했습니다. <span class="pnote">(이미지를 클릭하면 참석 신청 페이지로 이동합니다)</span></p>
+      </div>
+      <a class="notice" href="https://naver.me/FAAgboJC" target="_blank" rel="noopener">
+        <img src="webposter.jpg" alt="박원순혁신재단 2026 회원의날 이야기 포트럭 파티 웹자보 — 2026년 11월 14일(토) 15:00~18:00, 푸르메재단 4층, 작은마켓은 2시부터">
+      </a>
+      <div class="btnrow">
+        <a class="linkbtn linkbtn--slim" href="https://naver.me/FAAgboJC" target="_blank" rel="noopener">회원의날 참석 신청하기 <i>&rarr;</i></a>
+      </div>
+    </section>
+
+
+    <!-- 진행 순서 (6주기 추도식 리플릿 식순 디자인 참고) -->
+    <section class="program">
+      <span class="program__eyebrow">PROGRAM</span>
+      <h3 class="program__title">회원의날 진행 순서</h3>
+
+      <div class="program__part">
+        <div class="program__bar">
+          <span class="program__no">부대</span>
+          <span class="program__name">작은마켓</span>
+          <span class="program__time">14:00 —</span>
+        </div>
+        <ul class="program__list">
+          <li>회원들이 기부한 물품 판매</li>
+        </ul>
+      </div>
+
+      <div class="program__part">
+        <div class="program__bar">
+          <span class="program__no">1부</span>
+          <span class="program__name">재단 한해살이 이야기</span>
+          <span class="program__time">15:00 — 15:45</span>
+        </div>
+        <ul class="program__list">
+          <li>사전 영상</li>
+          <li>참석자 소개</li>
+          <li>환영 인사</li>
+          <li>활동 보고</li>
+          <li>특별 감사</li>
+        </ul>
+      </div>
+
+      <div class="program__part">
+        <div class="program__bar">
+          <span class="program__no">2부</span>
+          <span class="program__name">회원 이야기 포트럭 파티</span>
+          <span class="program__time">16:00 — 18:00</span>
+        </div>
+        <ul class="program__list">
+          <li>축하 공연</li>
+          <li>이야기 나눔</li>
+          <li>물품 경매 + 경품 추첨</li>
+          <li>식사와 친교 시간</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <div class="page__foot">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+    </div>
+  </div>
+</article>
+<!-- ============ 페이지 03 : 사회혁신가 지원사업 공모 마감 ============ -->
+<article class="page">
+  <div class="page__top page__top--bare"></div>
+
+  <div class="page__body">
+    <h2 class="h-lead"><span class="mark mark--nostar">사회혁신가 지원사업</span><br class="br-mo"> 공모 마감</h2>
+
+    <section class="news">
+      <div class="prose">
+        <p>박원순혁신재단의 목적사업 중 하나인 <strong>&lt;사회혁신가 지원사업&gt;</strong>이 첫걸음을 떼었습니다.</p>
+        <p>지난 10월 1일~25일까지 공모가 진행되었고 <strong>총 47명이 지원했습니다.</strong></p>
+        <p><strong>회원 여러분께서 모아주신 후원금이 일상을 혁신하는 활동가 지원에 쓰입니다.</strong></p>
+        <p>자세한 내용은 회원의날 보고드리겠습니다.</p>
+      </div>
+
+      <!-- 진행 단계 -->
+      <ol class="steps">
+        <li class="steps__item is-done">
+          <span class="steps__k">공모 접수</span>
+          <span class="steps__v">10.1 ~ 10.25</span>
+          <span class="steps__s">마감</span>
+        </li>
+        <li class="steps__item is-now">
+          <span class="steps__k">심사</span>
+          <span class="steps__v">10.26 ~ 11.8</span>
+          <span class="steps__s">진행 중</span>
+        </li>
+        <li class="steps__item">
+          <span class="steps__k">선정자 보고</span>
+          <span class="steps__v">11.14(토) 회원의날</span>
+          <span class="steps__s">예정</span>
+        </li>
+      </ol>
+    </section>
+
+
+    <div class="page__foot">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+    </div>
+  </div>
+</article>
+
+
+
+<!-- ============ 페이지 04 : 전주·전북 지역모임 ============ -->
+<article class="page">
+  <div class="page__top page__top--bare"></div>
+
+  <div class="page__body">
+    <h2 class="h-lead"><span class="mark mark--nostar">전주·전북 지역모임</span> 개최</h2>
+
+    <figure class="photo rise">
+      <img src="jeonju.jpg" alt="전주·전북 지역모임에서 회원들이 둘러앉아 이야기를 나누는 모습" style="aspect-ratio:960/508;object-position:center 89.4%">
+    </figure>
+
+    <section class="news">
+      <div class="prose">
+        <p>지난 10월 20일, <strong>전주·전북 지역 회원님들과 처음 지역 모임</strong>을 가졌습니다.</p>
+        <p>재단 활동에 적극적인 회원님들의 도움으로 좋은 장소에서 많은 이야기를 나눌 수 있었습니다.</p>
+        <p><strong>지역 모임이 필요할 때 언제든 연락 주시면 모임을 주선하겠습니다.</strong></p>
+      </div>
+    </section>
+
+    <div class="page__foot">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+    </div>
+  </div>
+</article>
+
+<!-- ============ 페이지 05 : 책읽기모임 + 마감 ============ -->
+<article class="page">
+  <div class="page__top page__top--bare"></div>
+
+  <div class="page__body">
+    <h2 class="h-lead">책읽기 모임<br class="br-mo"> <span class="mark mark--nostar">&lt;원순씨의 열린 서재&gt;</span></h2>
+
+    <figure class="photo photo--free rise">
+      <img src="bookclub.jpg" alt="책읽기 모임 원순씨의 열린 서재에서 회원들이 책을 펼쳐 놓고 이야기를 나누는 모습">
+    </figure>
+
+    <section class="news">
+      <div class="prose">
+        <p>재단의 첫 소모임 이름은 <strong>&lt;원순씨의 열린 서재&gt;</strong>입니다.</p>
+        <p>9월 16일 첫 만남을 시작으로 매월 1권씩 선정 도서를 읽고 소감을 나눕니다. 첫 번째 선정 도서는 <strong>『야만시대의 기록』</strong>입니다.</p>
+        <p>소모임 가입에 관심 있는 분은 연락 주세요.</p>
+      </div>
+    </section>
+
+    <section class="news rise" style="margin-top:34px;border-top:0;padding-top:0">
+      <div class="give" style="margin-top:0">
+        <a class="give__btn" href="https://www.parkwonsoon.org/" target="_blank" rel="noopener">박원순혁신재단 홈페이지 바로가기 <i>&rarr;</i></a>
+      </div>
+      <div class="footer">
+        <p class="footer__org">(사)박원순혁신재단</p>
+        <p>서울 종로구 새문안로 69 구세군회관 504호</p>
+        <p><a href="https://www.parkwonsoon.org" target="_blank" rel="noopener">www.parkwonsoon.org</a> / <a href="sms:+821073970109">010-7397-0109</a> / <a href="mailto:sojang@parkwonsoon.org">sojang@parkwonsoon.org</a></p>
+        <p>후원계좌: 하나은행 <button type="button" class="copybtn" data-copy="203-910058-08904">203-910058-08904</button> (사단법인 박원순혁신재단)</p>
+      </div>
+    </section>
+
+    <div class="page__foot">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+      <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
+    </div>
+  </div>
+</article>
+
+<script>
+(function(){
+  var reduce = false;
+  try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch(e){}
+
+  var items = document.querySelectorAll('.rise');
+  function revealAll(){
+    for (var i=0;i<items.length;i++){ items[i].classList.add('in'); }
+  }
+
+  if (!reduce && 'IntersectionObserver' in window){
+    document.documentElement.classList.add('js-anim');
+    try {
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, {threshold:.08, rootMargin:'0px 0px -30px 0px'});
+      for (var i=0;i<items.length;i++){ io.observe(items[i]); }
+    } catch(err){ revealAll(); }
+    setTimeout(revealAll, 2000);
+  } else {
+    revealAll();
+  }
+
+  /* 계좌번호 복사 */
+  var copyBtn = document.querySelector('.copybtn');
+  if (copyBtn){
+    copyBtn.addEventListener('click', function(){
+      var text = copyBtn.getAttribute('data-copy');
+      function done(){
+        copyBtn.classList.add('is-copied');
+        setTimeout(function(){ copyBtn.classList.remove('is-copied'); }, 1600);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(done).catch(function(){ fallback(); });
+      } else { fallback(); }
+      function fallback(){
+        var ta = document.createElement('textarea');
+        ta.value = text; ta.setAttribute('readonly','');
+        ta.style.position='fixed'; ta.style.left='-9999px';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(); } catch(e){}
+        document.body.removeChild(ta);
+      }
+    });
+  }
+
+  var wrap = document.getElementById('cover');
+  var video = document.getElementById('coverVideo');
+  var playBtn = document.getElementById('coverPlay');
+  if (!wrap || !video) return;
+
+  function paused(state){ wrap.classList.toggle('is-paused', !!state); }
+
+  var wantSound = false;
+
+  function tryPlay(){
+    if (!wantSound) video.muted = true;
+    var r;
+    try { r = video.play(); } catch(e){ paused(true); return; }
+    if (r && r.then){ r.then(function(){ paused(false); }).catch(function(){ paused(true); }); }
+  }
+
+  var autoPaused = false;   /* 스크롤로 벗어나 멈춘 것인지 구분 */
+
+  function rewind(){ try { video.currentTime = 0; } catch(e){} }
+  function replay(){ rewind(); tryPlay(); }
+
+  if (reduce){ paused(true); } else { tryPlay(); }
+
+  /* 재생이 끝나면 마지막 화면에서 멈춘다 */
+  video.addEventListener('ended', function(){
+    autoPaused = true;
+    paused(false);
+  });
+
+  /* 표지가 화면에 들어오면 처음부터 재생, 벗어나면 멈추고 첫 화면으로 */
+  if (!reduce && 'IntersectionObserver' in window){
+    try {
+      var seen = false;
+      var vio = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if (e.isIntersecting){
+            autoPaused = false;
+            if (seen) replay(); else { seen = true; tryPlay(); }
+          } else {
+            seen = true;
+            autoPaused = true;
+            video.pause();
+          }
+        });
+      }, {threshold:.35});
+      vio.observe(wrap);
+    } catch(err){}
+  }
+
+  /* 자동재생이 막힌 경우를 대비해 첫 터치 한 번으로도 재생 시도 */
+  ['touchstart','click'].forEach(function(evt){
+    document.addEventListener(evt, function once(){
+      if (video.paused && !reduce && !autoPaused) tryPlay();
+      document.removeEventListener(evt, once);
+    }, {passive:true});
+  });
+
+  if (playBtn){
+    playBtn.addEventListener('click', function(e){ e.stopPropagation(); replay(); });
+  }
+  video.addEventListener('pause', function(){
+    /* 스크롤로 멈추거나 끝까지 재생한 경우에는 '영상 재생' 버튼을 띄우지 않는다 */
+    if (!reduce && !autoPaused) paused(true);
+  });
+  video.addEventListener('play', function(){ paused(false); });
+
+  /* 소리 켜기 / 끄기 */
+  var soundBtn = document.getElementById('coverSound');
+  if (soundBtn){
+    soundBtn.addEventListener('click', function(e){
+      e.stopPropagation(); e.preventDefault();
+      wantSound = video.muted;          /* 지금 음소거면 소리를 켠다 */
+      video.muted = !wantSound;
+      try { video.volume = 1; } catch(err){}
+      soundBtn.textContent = wantSound ? '소리 끄기' : '소리 켜기';
+      soundBtn.setAttribute('aria-label', soundBtn.textContent);
+      /* 이미 끝났거나 멈춰 있으면 처음부터 다시 재생 */
+      if (wantSound && (video.paused || video.ended)) replay();
+    });
+  }
+  video.addEventListener('error', function(){ paused(true); });
+})();
+</script>
+
+<!-- 방문 통계 (GoatCounter) -->
+<script data-goatcounter="https://parkwonsoon.goatcounter.com/count"         async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
