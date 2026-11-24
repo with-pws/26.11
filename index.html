@@ -712,6 +712,11 @@
 
   /* 진행 순서 시간: 시작 시각 세로 정렬 */
   .program__time{min-width:7.3em;text-align:left;font-variant-numeric:tabular-nums}
+
+  /* 작은마켓 물품 사진 3장 */
+  .market-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:-14px 0 30px}
+  .market-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  @media (max-width:760px){ .market-grid{gap:6px;margin-top:-18px} }
 </style>
 </head>
 <body>
@@ -801,6 +806,12 @@
     <figure class="photo rise">
       <img src="market.jpg" alt="회원의날 작은마켓에서 참석자들이 기부 물품을 둘러보는 모습">
     </figure>
+
+    <div class="market-grid rise">
+      <img src="market1.jpg" alt="작은마켓의 발효빵과 스카프 판매대">
+      <img src="market2.jpg" alt="작은마켓에 놓인 장갑, 텀블러, 새활용 복슬비 등 기부 물품">
+      <img src="market3.jpg" alt="작은마켓에 놓인 전통주, 키링, 지갑 등 기부 물품">
+    </div>
 
     <section class="news">
       <div class="prose">
