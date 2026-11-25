@@ -750,6 +750,16 @@
   .photo-grid img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
   .page__body .news > .photo-grid{margin:26px 0}
   @media (max-width:760px){ .photo-grid{gap:6px} }
+
+  /* 가로 1장 + 세로 2장 한 줄 (높이 맞춤) */
+  .photo-mix{display:grid;grid-template-columns:3fr 1.333fr 1.333fr;gap:10px}
+  .photo-mix img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:2/3}
+  .photo-mix .photo-mix__land{aspect-ratio:3/2}
+  .page__body .news > .photo-mix{margin:26px 0}
+  @media (max-width:760px){
+    .photo-mix{grid-template-columns:1fr 1fr;gap:6px}
+    .photo-mix .photo-mix__land{grid-column:1 / -1}
+  }
 </style>
 </head>
 <body>
@@ -825,7 +835,13 @@
       </div>
       <div class="prose">
         <p>송경용 이사장님, 장영승 회원님의 감동적인 공연으로 시작한 2부에서는, 참석한 회원님들이 보낸 2026년을 돌아보며 이야기를 나누는 시간을 가졌습니다.</p>
-        <!-- 사진 자리 3 -->
+      </div>
+      <div class="photo-mix rise">
+        <img class="photo-mix__land" src="part2-1.jpg" alt="2부에서 한복을 입은 회원이 노래하는 모습">
+        <img src="part2-2.jpg" alt="2부에서 마이크를 들고 노래하는 모습">
+        <img src="part2-3.jpg" alt="2부에서 기타를 치며 노래하는 모습">
+      </div>
+      <div class="prose">
         <p>회원분들께서 기부해 주신 물품 중 일부는 경품으로 선물했으며, 3점의 귀한 기부품은 경매에 부쳐 완판했습니다!</p>
       </div>
     </section>
