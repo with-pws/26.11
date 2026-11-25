@@ -767,6 +767,8 @@
   /* 섹션 마지막 요소 아래 여백 없앰(사진 규칙보다 우선) */
   .page__body .news > :last-child{margin-bottom:0 !important}
   .photo-grid .photo-grid__wide{grid-column:1 / -1}
+  /* 사진 묶음이 연달아 오면 사진 사이 간격(10px)으로 붙임 */
+  .page__body .news > .photo-mix + .photo-grid{margin-top:-16px}
 </style>
 </head>
 <body>
@@ -848,6 +850,11 @@
         <img src="part2-2.jpg" alt="2부에서 마이크를 들고 노래하는 모습">
         <img src="part2-3.jpg" alt="2부에서 기타를 치며 노래하는 모습">
         <img class="photo-mix__land" src="part2-1.jpg" alt="2부에서 한복을 입은 회원이 노래하는 모습">
+      </div>
+      <div class="photo-grid rise">
+        <img src="part2-5.jpg" alt="2부 이야기 나눔에서 회원이 이야기하는 모습">
+        <img src="part2-6.jpg" alt="2부 이야기 나눔에서 회원이 이야기하는 모습">
+        <img class="photo-grid__wide" src="part2-4.jpg" alt="2부 이야기 나눔에서 두 회원이 마이크를 들고 웃는 모습">
       </div>
       <div class="prose">
         <p>회원분들께서 기부해 주신 물품 중 일부는 경품으로 선물했으며, 3점의 귀한 기부품은 경매에 부쳐 완판했습니다!</p>
