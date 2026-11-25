@@ -735,6 +735,15 @@
     .sel__meta{display:inline;margin-left:8px}
     .sel__v{font-size:1rem}
   }
+
+  /* 본문·사진 간격 통일: 사진 위아래 26px, 섹션 처음·끝 여백 0 */
+  .page__body .news > .prose > p:last-child{margin-bottom:0}
+  .page__body .news > .photo,
+  .page__body .news > .market-grid{margin:26px 0}
+  .page__body .news > :first-child{margin-top:0}
+  .page__body .news > :last-child{margin-bottom:0}
+  .page__body .news{padding:34px 0}
+  .page__body .news:first-of-type{padding-top:0}
 </style>
 </head>
 <body>
@@ -789,17 +798,13 @@
   <div class="page__body">
     <h2 class="h-lead"><span class="mark mark--right">2026 회원의날</span> 돌아보기</h2>
 
-    <section class="news" style="margin-bottom:22px">
+    <section class="news">
       <div class="prose">
         <p>지난 11월 14일(토)에 ‘2026 회원의날’을 열었습니다.<br>궂은 날씨였음에도 불구하고 사단법인으로 출발한 첫해의 회원의날이어서 그런지 많은 회원님께서 참석해 주셨습니다.</p>
       </div>
-    </section>
-
-    <figure class="photo rise">
-      <img src="group2.jpg" alt="2026 회원의날 행사장에서 참석자들이 안내지를 들고 함께 찍은 단체 사진">
-    </figure>
-
-    <section class="news">
+      <figure class="photo rise">
+        <img src="group2.jpg" alt="2026 회원의날 행사장에서 참석자들이 안내지를 들고 함께 찍은 단체 사진">
+      </figure>
       <div class="prose">
         <!-- 사진 자리 1 -->
         <p>1부에서는 재단의 출발과 2026년 활동에 대해 보고드렸고, 이렇게 출발하기까지 물심양면으로 크게 도와주신 분들께 감사장도 드렸습니다.</p>
@@ -812,7 +817,7 @@
 
 
     <!-- 작은마켓 -->
-    <section class="news" style="margin-top:40px">
+    <section class="news">
       <h3 class="h-sub">&lt;작은마켓&gt;</h3>
       <div class="prose">
         <p>우리 재단 회원의날 시그니처가 되어 가고 있는 <strong>&lt;작은마켓&gt;</strong><br>올해도 많은 회원님의 물품 기부와 자원봉사로 진행되었습니다.</p>
@@ -830,7 +835,7 @@
         <img src="market2.jpg" alt="작은마켓에 놓인 장갑, 텀블러, 새활용 복슬비 등 기부 물품">
         <img src="market3.jpg" alt="작은마켓에 놓인 전통주, 키링, 지갑 등 기부 물품">
       </div>
-      <div class="prose" style="margin-top:24px">
+      <div class="prose">
         <p>물품을 기부해 주신 강윤선, 고진광, 김현주, 박명희, 선명한, 송경용, 원기준, 원유미, 이경희, 이선희(전주), 이선희(서울), 이옥숙, 임재면, 장영승, 정낙섭, 조선희, 지만호 선생님, <strong>고맙습니다.</strong></p>
       </div>
     </section>
