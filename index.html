@@ -757,6 +757,15 @@
   .photo-mix .photo-mix__land{grid-column:1 / -1;aspect-ratio:3/2;object-position:center}
   .page__body .news > .photo-mix{margin:26px 0}
   @media (max-width:760px){ .photo-mix{gap:6px} }
+
+  /* 가로 2장(왼쪽 위아래) + 세로 1장(오른쪽) */
+  .photo-stack{display:grid;grid-template-columns:1fr .89fr;grid-template-rows:auto auto;gap:10px}
+  .photo-stack img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+  .photo-stack .photo-stack__tall{grid-column:2;grid-row:1 / span 2;height:100%;aspect-ratio:auto;object-position:center 40%}
+  .page__body .news > .photo-stack{margin:26px 0}
+  @media (max-width:760px){ .photo-stack{gap:6px} }
+  /* 섹션 마지막 요소 아래 여백 없앰(사진 규칙보다 우선) */
+  .page__body .news > :last-child{margin-bottom:0 !important}
 </style>
 </head>
 <body>
@@ -840,6 +849,11 @@
       </div>
       <div class="prose">
         <p>회원분들께서 기부해 주신 물품 중 일부는 경품으로 선물했으며, 3점의 귀한 기부품은 경매에 부쳐 완판했습니다!</p>
+      </div>
+      <div class="photo-stack rise">
+        <img src="part3-1.jpg" alt="경매에 나온 그림을 소개하는 모습">
+        <img src="part3-2.jpg" alt="경매에 나온 그림 두 점과 진행자">
+        <img class="photo-stack__tall" src="part3-3.jpg" alt="경매에서 백자 달항아리를 낙찰받은 회원">
       </div>
     </section>
 
