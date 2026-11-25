@@ -719,28 +719,21 @@
   .market-grid__wide{grid-column:1 / -1}
   @media (max-width:760px){ .market-grid{grid-template-columns:1fr;gap:10px} }
 
-  /* 사회혁신가 선정자 카드: 한 줄에 한 분, 왼쪽 이름 / 오른쪽 소개 */
-  .sel-grid{display:grid;grid-template-columns:1fr;row-gap:18px;margin-top:30px}
+  /* 사회혁신가 선정자: 흰 바탕 목록, 포인트 컬러는 번호만 */
+  .sel-grid{display:grid;grid-template-columns:1fr;margin-top:30px;border-top:2px solid var(--ink)}
   .sel{display:grid;grid-template-columns:170px 1fr;column-gap:30px;align-items:start;
-    background:var(--wash);border-radius:4px;padding:26px 30px;box-shadow:0 1px 0 rgba(221,166,0,.18)}
-  .sel__side{border-right:1px dashed rgba(221,166,0,.55);padding-right:20px;align-self:stretch}
-  .sel__head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
-  .sel__no{font-family:var(--display);font-weight:800;font-size:2.3rem;line-height:1;color:var(--yellow);letter-spacing:-.02em}
-  .sel__tag{font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.08em;color:var(--ink-soft);
-    background:#fff;border:1px solid rgba(221,166,0,.45);border-radius:999px;padding:3px 11px}
-  .sel__name{font-family:var(--serif);font-weight:700;font-size:1.32rem;margin:8px 0 0;line-height:1.4}
+    padding:26px 0;border-bottom:1px solid var(--rule)}
+  .sel__head{display:flex;align-items:baseline;gap:10px;margin-bottom:6px}
+  .sel__no{font-family:var(--display);font-weight:800;font-size:2rem;line-height:1;color:var(--yellow);letter-spacing:-.02em}
+  .sel__tag{font-family:var(--sans);font-size:.74rem;color:var(--ink-faint);letter-spacing:.06em}
+  .sel__name{font-family:var(--serif);font-weight:700;font-size:1.28rem;margin:6px 0 0;line-height:1.4}
   .sel__meta{display:block;font-family:var(--sans);font-weight:400;font-size:.76rem;color:var(--ink-faint);margin-top:4px}
-  .sel__k{margin:0 0 6px}
-  .sel__k span{font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.06em;color:var(--ink);
-    background:linear-gradient(transparent 58%, rgba(249,194,43,.55) 58%);padding:0 2px}
+  .sel__v{font-size:.97rem;line-height:1.8;margin:0;color:#111;-webkit-text-stroke:.35px #111;paint-order:stroke fill}
   .sel__v + .sel__v{margin-top:1em}
-  .sel__v{font-size:.95rem;line-height:1.8;margin:0;color:#111;-webkit-text-stroke:.35px #111;paint-order:stroke fill}
   @media (max-width:760px){
-    .sel-grid{row-gap:16px}
-    .sel{grid-template-columns:1fr;padding:20px 20px 18px;row-gap:14px}
-    .sel__side{border-right:0;padding-right:0;border-bottom:1px dashed rgba(221,166,0,.55);padding-bottom:12px}
+    .sel{grid-template-columns:1fr;row-gap:12px;padding:22px 0}
     .sel__meta{display:inline;margin-left:8px}
-    .sel__v{font-size:.98rem}
+    .sel__v{font-size:1rem}
   }
 </style>
 </head>
