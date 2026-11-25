@@ -744,6 +744,12 @@
   .page__body .news > :last-child{margin-bottom:0}
   .page__body .news{padding:34px 0}
   .page__body .news:first-of-type{padding-top:0}
+
+  /* 사진 묶음(2열) */
+  .photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .photo-grid img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+  .page__body .news > .photo-grid{margin:26px 0}
+  @media (max-width:760px){ .photo-grid{gap:6px} }
 </style>
 </head>
 <body>
@@ -808,7 +814,16 @@
       <div class="prose">
         <!-- 사진 자리 1 -->
         <p>1부에서는 재단의 출발과 2026년 활동에 대해 보고드렸고, 이렇게 출발하기까지 물심양면으로 크게 도와주신 분들께 감사장도 드렸습니다.</p>
-        <!-- 사진 자리 2 -->
+      </div>
+      <div class="photo-grid rise">
+        <img src="part1-1.jpg" alt="1부 활동 보고 — 보고 순서 화면 앞에서 발표하는 모습">
+        <img src="part1-2.jpg" alt="회원의날 인사말을 하는 모습">
+        <img src="part1-3.jpg" alt="감사장 전달 기념 촬영">
+        <img src="part1-4.jpg" alt="양주농부 이범석 대표 감사장 전달">
+        <img src="part1-5.jpg" alt="감사장 전달 기념 촬영">
+        <img src="part1-6.jpg" alt="감사장 전달 기념 촬영">
+      </div>
+      <div class="prose">
         <p>송경용 이사장님, 장영승 회원님의 감동적인 공연으로 시작한 2부에서는, 참석한 회원님들이 보낸 2026년을 돌아보며 이야기를 나누는 시간을 가졌습니다.</p>
         <!-- 사진 자리 3 -->
         <p>회원분들께서 기부해 주신 물품 중 일부는 경품으로 선물했으며, 3점의 귀한 기부품은 경매에 부쳐 완판했습니다!</p>
