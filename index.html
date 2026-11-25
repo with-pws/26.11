@@ -719,32 +719,28 @@
   .market-grid__wide{grid-column:1 / -1}
   @media (max-width:760px){ .market-grid{grid-template-columns:1fr;gap:10px} }
 
-  /* 사회혁신가 선정자 카드 */
-  .sel-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:22px;row-gap:22px;margin-top:30px}
-  .sel{position:relative;background:var(--wash);border-radius:4px;padding:24px 26px 22px;
-    box-shadow:0 1px 0 rgba(221,166,0,.18);
-    display:grid;grid-row:span 5;grid-template-rows:subgrid;row-gap:0;align-content:start}
-  .sel__head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
-  .sel__no{font-family:var(--display);font-weight:800;font-size:2.1rem;line-height:1;color:var(--yellow);
-    letter-spacing:-.02em}
+  /* 사회혁신가 선정자 카드: 한 줄에 한 분, 왼쪽 이름 / 오른쪽 소개 */
+  .sel-grid{display:grid;grid-template-columns:1fr;row-gap:18px;margin-top:30px}
+  .sel{display:grid;grid-template-columns:170px 1fr;column-gap:30px;align-items:start;
+    background:var(--wash);border-radius:4px;padding:26px 30px;box-shadow:0 1px 0 rgba(221,166,0,.18)}
+  .sel__side{border-right:1px dashed rgba(221,166,0,.55);padding-right:20px;align-self:stretch}
+  .sel__head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+  .sel__no{font-family:var(--display);font-weight:800;font-size:2.3rem;line-height:1;color:var(--yellow);letter-spacing:-.02em}
   .sel__tag{font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.08em;color:var(--ink-soft);
     background:#fff;border:1px solid rgba(221,166,0,.45);border-radius:999px;padding:3px 11px}
-  .sel__name{font-family:var(--serif);font-weight:700;font-size:1.32rem;margin:6px 0 14px}
-  .sel__meta{font-family:var(--sans);font-weight:400;font-size:.76rem;color:var(--ink-faint);margin-left:8px}
+  .sel__name{font-family:var(--serif);font-weight:700;font-size:1.32rem;margin:8px 0 0;line-height:1.4}
+  .sel__meta{display:block;font-family:var(--sans);font-weight:400;font-size:.76rem;color:var(--ink-faint);margin-top:4px}
   .sel__k{margin:0 0 6px}
   .sel__k span{font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.06em;color:var(--ink);
     background:linear-gradient(transparent 58%, rgba(249,194,43,.55) 58%);padding:0 2px}
-  .sel__k--plan{margin-top:16px;padding-top:14px;border-top:1px dashed rgba(221,166,0,.55)}
-  .sel__v{font-size:.95rem;line-height:1.8;margin:0;color:var(--ink)}
-  .sel__list{list-style:none;margin:0;padding:0;font-size:.95rem;line-height:1.8;color:var(--ink)}
-  .sel__list li{position:relative;padding-left:16px;margin-bottom:6px}
-  .sel__list li::before{content:"";position:absolute;left:0;top:.82em;width:8px;height:2px;
-    background:var(--gold);border-radius:2px}
-  .sel__v,.sel__list{color:#111;-webkit-text-stroke:.35px #111;paint-order:stroke fill}
+  .sel__k--plan{margin-top:16px}
+  .sel__v{font-size:.95rem;line-height:1.8;margin:0;color:#111;-webkit-text-stroke:.35px #111;paint-order:stroke fill}
   @media (max-width:760px){
-    .sel-grid{grid-template-columns:1fr;row-gap:16px}
-    .sel{padding:20px 20px 18px}
-    .sel__v,.sel__list{font-size:.98rem}
+    .sel-grid{row-gap:16px}
+    .sel{grid-template-columns:1fr;padding:20px 20px 18px;row-gap:14px}
+    .sel__side{border-right:0;padding-right:0;border-bottom:1px dashed rgba(221,166,0,.55);padding-bottom:12px}
+    .sel__meta{display:inline;margin-left:8px}
+    .sel__v{font-size:.98rem}
   }
 </style>
 </head>
@@ -804,7 +800,7 @@
       <div class="prose">
         <p>지난 11월 14일, ‘2026 회원의 날’을 열었습니다.</p>
         <p><strong>100여 분이 자리를 함께해 주셨습니다.</strong> 귀한 걸음 해주신 모든 회원님께 진심으로 감사드립니다.</p>
-        <p><strong>회원님들의 이야기가 더 풍성하고 따뜻한 자리를 만들어 주었습니다.</strong></p>
+        <p><strong>회원 여러분이 들려주신 이야기가 더 풍성하고 따뜻한 행사를 만들어 주었습니다.</strong></p>
       </div>
     </section>
 
@@ -847,32 +843,48 @@
       </div>
       <div class="sel-grid rise">
         <div class="sel">
-          <div class="sel__head"><span class="sel__no">01</span><span class="sel__tag">전국</span></div>
-          <p class="sel__name">최*원 님 <span class="sel__meta">여 · 39세</span></p>
-          <p class="sel__v">최*원 님은 시니어 활동가와 청년·신진 활동가를 연결하는 세대 간 협력사업을 기반으로 하여 해양환경단체의 형성을 이끌고 계신 분입니다.</p>
-          <p class="sel__k sel__k--plan"><span>지원금 활용 계획</span></p>
-          <p class="sel__v">이번 지원사업을 통해 전국 권역별 현장 방문과 활동가 간담회, 공동 정화활동, 공익기술 자원봉사자 교류 및 온라인 소통체계를 강화하고, 현재 운영 중인 활동 네트워크를 지속가능한 협력체계로 발전시키려는 계획을 가지고 있습니다.</p>
+          <div class="sel__side">
+            <div class="sel__head"><span class="sel__no">01</span><span class="sel__tag">전국</span></div>
+            <p class="sel__name">최*원 님 <span class="sel__meta">여 · 39세</span></p>
+          </div>
+          <div class="sel__body">
+            <p class="sel__v">최*원 님은 시니어 활동가와 청년·신진 활동가를 연결하는 세대 간 협력사업을 기반으로 하여 해양환경단체의 형성을 이끌고 계신 분입니다.</p>
+            <p class="sel__k sel__k--plan"><span>지원금 활용 계획</span></p>
+            <p class="sel__v">이번 지원사업을 통해 전국 권역별 현장 방문과 활동가 간담회, 공동 정화활동, 공익기술 자원봉사자 교류 및 온라인 소통체계를 강화하고, 현재 운영 중인 활동 네트워크를 지속가능한 협력체계로 발전시키려는 계획을 가지고 있습니다.</p>
+          </div>
         </div>
         <div class="sel">
-          <div class="sel__head"><span class="sel__no">02</span><span class="sel__tag">전주</span></div>
-          <p class="sel__name">김*환 님 <span class="sel__meta">남 · 42세</span></p>
-          <p class="sel__v">김*환 님은 전주 지역에서 로컬 크리에이터 아카이빙, 마블러스 협동조합 설립, 청년 커뮤니티 및 창업 코칭 등 현장 활동가를 지원·연결하는 활동을 해 온 분입니다.</p>
-          <p class="sel__k sel__k--plan"><span>지원금 활용 계획</span></p>
-          <p class="sel__v">앞으로 전주 화이부동 아지트를 거점으로 삼아 지역 동료들의 경험 정리를 돕는 소규모 모임을 운영할 예정입니다. 또한 공주, 김해 등 다른 지역 동료들과 ‘멀티 로컬’ 교류 워크숍을 열고, 지역 활동가들이 자기 일을 지속할 수 있는 실무 자원과 협력망을 구축할 계획을 가지고 있습니다.</p>
+          <div class="sel__side">
+            <div class="sel__head"><span class="sel__no">02</span><span class="sel__tag">전주</span></div>
+            <p class="sel__name">김*환 님 <span class="sel__meta">남 · 42세</span></p>
+          </div>
+          <div class="sel__body">
+            <p class="sel__v">김*환 님은 전주 지역에서 로컬 크리에이터 아카이빙, 마블러스 협동조합 설립, 청년 커뮤니티 및 창업 코칭 등 현장 활동가를 지원·연결하는 활동을 해 온 분입니다.</p>
+            <p class="sel__k sel__k--plan"><span>지원금 활용 계획</span></p>
+            <p class="sel__v">앞으로 전주 화이부동 아지트를 거점으로 삼아 지역 동료들의 경험 정리를 돕는 소규모 모임을 운영할 예정입니다. 또한 공주, 김해 등 다른 지역 동료들과 ‘멀티 로컬’ 교류 워크숍을 열고, 지역 활동가들이 자기 일을 지속할 수 있는 실무 자원과 협력망을 구축할 계획을 가지고 있습니다.</p>
+          </div>
         </div>
         <div class="sel">
-          <div class="sel__head"><span class="sel__no">03</span><span class="sel__tag">군포</span></div>
-          <p class="sel__name">김*열 님 <span class="sel__meta">남 · 48세</span></p>
-          <p class="sel__v">김*열 님은 군포에서 20여 년간 생협, 주민자치, 마을미디어 활동 등 생활 속에서 사람들이 주체가 되는 활동을 기획·실천해 온 활동가입니다.</p>
-          <p class="sel__k sel__k--plan"><span>지원금 활용 계획</span></p>
-          <p class="sel__v">지원사업을 통해 군포 지역 주민자치 활동 및 시민 퍼실리테이터로 활동하며 자치분권과 협치에 기여할 계획입니다. 또한 ‘촉진자 동료 서클’을 운영해 활동을 교류하고, ‘군포의 허리들’ 인터뷰를 통해 현장의 활동을 기록할 예정입니다.</p>
+          <div class="sel__side">
+            <div class="sel__head"><span class="sel__no">03</span><span class="sel__tag">군포</span></div>
+            <p class="sel__name">김*열 님 <span class="sel__meta">남 · 48세</span></p>
+          </div>
+          <div class="sel__body">
+            <p class="sel__v">김*열 님은 군포에서 20여 년간 생협, 주민자치, 마을미디어 활동 등 생활 속에서 사람들이 주체가 되는 활동을 기획·실천해 온 활동가입니다.</p>
+            <p class="sel__k sel__k--plan"><span>지원금 활용 계획</span></p>
+            <p class="sel__v">지원사업을 통해 군포 지역 주민자치 활동 및 시민 퍼실리테이터로 활동하며 자치분권과 협치에 기여할 계획입니다. 또한 ‘촉진자 동료 서클’을 운영해 활동을 교류하고, ‘군포의 허리들’ 인터뷰를 통해 현장의 활동을 기록할 예정입니다.</p>
+          </div>
         </div>
         <div class="sel">
-          <div class="sel__head"><span class="sel__no">04</span><span class="sel__tag">대전</span></div>
-          <p class="sel__name">임*숙 님 <span class="sel__meta">여 · 47세</span></p>
-          <p class="sel__v">임*숙 님은 대전에서 한살림 지역 활동, 마을카페 운영, 세계시민캠프 등을 통해 사람과 사람을 이어온 현장 활동가입니다. 주로 예술과 몸짓 등 비언어적 커뮤니케이션을 통한 시민교류 및 관계디자인 실천 중인 분입니다.</p>
-          <p class="sel__k sel__k--plan"><span>지원금 활용 계획</span></p>
-          <p class="sel__v">이번 기회를 통해 갈등 중재 교육을 받고, 지역 내에서의 소통 강화에 기여할 계획이며, 춤 테라피 교육, 영 케어러 지원 워크숍 등을 개최해 예술로 갈등을 중재하는 활동을 펼쳐나갈 계획입니다.</p>
+          <div class="sel__side">
+            <div class="sel__head"><span class="sel__no">04</span><span class="sel__tag">대전</span></div>
+            <p class="sel__name">임*숙 님 <span class="sel__meta">여 · 47세</span></p>
+          </div>
+          <div class="sel__body">
+            <p class="sel__v">임*숙 님은 대전에서 한살림 지역 활동, 마을카페 운영, 세계시민캠프 등을 통해 사람과 사람을 이어온 현장 활동가입니다. 주로 예술과 몸짓 등 비언어적 커뮤니케이션을 통한 시민교류 및 관계디자인 실천 중인 분입니다.</p>
+            <p class="sel__k sel__k--plan"><span>지원금 활용 계획</span></p>
+            <p class="sel__v">이번 기회를 통해 갈등 중재 교육을 받고, 지역 내에서의 소통 강화에 기여할 계획이며, 춤 테라피 교육, 영 케어러 지원 워크숍 등을 개최해 예술로 갈등을 중재하는 활동을 펼쳐나갈 계획입니다.</p>
+          </div>
         </div>
       </div>
     </section>
