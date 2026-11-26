@@ -774,14 +774,9 @@
   @media (max-width:760px){
     .book-title{font-size:1.28rem;line-height:1.5;margin-top:36px !important}
   }
-  /* 동그라미 + 오른쪽 위 별표 */
-  .circle--star{position:relative}
-  .circle--star::after{content:"";position:absolute;right:-.42em;top:-.5em;width:.7em;height:.7em;
-    background-repeat:no-repeat;background-size:contain;
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-6 -8 112 112'><g transform='rotate(-10 50 50)'><path d='M 46.0 -4.6 Q 52.3 -2.1 48.8 3.6 Q 67.1 42.5 76.1 84.7 Q 40.0 61.0 4.9 35.9 Q 49.0 38.6 92.9 33.4 Q 59.6 63.2 21.0 85.6 Q 31.8 43.5 48.8 3.6 L 55.9 24.6' fill='none' stroke='%23dda600' stroke-width='6.5' stroke-linecap='round' stroke-linejoin='round'/></g></svg>");}
+  /* 두 줄로 나뉘는 밑줄: 줄마다 밑줄 */
   @media (max-width:760px){
-    .circle--star{margin-left:-.24em;margin-top:.35em}
-    .circle--star::after{top:-.32em;right:-.5em;width:.6em;height:.6em}
+    .mark--wrap{display:inline;-webkit-box-decoration-break:clone;box-decoration-break:clone}
   }
 </style>
 </head>
@@ -921,7 +916,7 @@
   <div class="page__top page__top--bare"></div>
 
   <div class="page__body">
-    <h2 class="h-lead"><span class="mark mark--nostar">사회혁신가 지원사업</span><br class="br-mo"> <span class="circle circle--star">선정자</span> 소개</h2>
+    <h2 class="h-lead"><span class="mark mark--nostar mark--wrap">사회혁신가 지원사업<br class="br-mo"> 선정자</span> 소개</h2>
 
     <section class="news">
       <div class="prose">
